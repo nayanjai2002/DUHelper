@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nayanjai.duhelper">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DUHelper">
+        <activity
+            android:name=".FullView"
+            android:exported="true" />
+        <activity
+            android:name=".SYLLABUS.UG.UG_Paper_Syl_LINKS_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".DOWNLOADS.DownloadActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EBOOKS.eBooksActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OTHERS.OthersActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PYQ.PYQActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SYLLABUS.SyllabusActivity"
+            android:exported="true" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".Splashscreen"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">DUHelper</string>
+    <string name="du_helper">DU Helper</string>
+    <string name="logo">LOGO</string>
+    <string name="image">Image</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="under_graduate">Under-Graduate</string>
+    <string name="post_graduate">Post-Graduate</string>
+    <string name="revised_cbcs_syllabi">Revised CBCS Syllabi</string>
+    <string name="other_courses">Other Courses</string>
+    <string name="syllabus">SYLLABUS</string>
+    <string name="e_books">E-BOOKS</string>
+    <string name="previous_year_question">PREVIOUS YEAR QUESTION</string>
+    <string name="others">OTHERS</string>
+    <string name="courses_name">COURSES</string>
+
+
+</resources>

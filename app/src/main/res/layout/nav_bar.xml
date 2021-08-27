@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:gravity="center"
+    android:backgroundTint="#EBD851E7">
+
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:background="@drawable/logo4"
+        android:contentDescription="Logo" />
+
+</LinearLayout>

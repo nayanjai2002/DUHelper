@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <group
+            android:id="@+id/menu_top"
+            android:checkableBehavior="single">
+   <item android:title="General">
+      <menu>
+        <item
+            android:id="@+id/home_nav"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+                <item
+                    android:id="@+id/syllabus_nav"
+                    android:icon="@drawable/syllabus_icon"
+                    android:title="Syllabus" />
+                <item
+                    android:id="@+id/ebooks_nav"
+                    android:icon="@drawable/ebook_icon"
+                    android:title="E-Books" />
+                <item
+                    android:id="@+id/pyq_nav"
+                    android:icon="@drawable/pyq_icon"
+                    android:title="PYQ" />
+                <item
+                    android:id="@+id/others_nav"
+                    android:icon="@drawable/other_icon"
+                    android:title="Others" />
+
+       </menu>
+     </item>
+     </group>
+
+        <item
+            android:id="@+id/aboutus"
+            android:icon="@drawable/aboutus_icon"
+            android:title="About Us" />
+        <item
+            android:id="@+id/rateus"
+            android:icon="@drawable/rateus_icon"
+            android:title="Rate Us"/>
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/share_icon"
+            android:title="Share"/>
+
+</menu>

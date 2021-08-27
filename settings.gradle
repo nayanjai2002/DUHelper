@@ -1,0 +1,2 @@
+rootProject.name = "DUHelper"
+include ':app'
