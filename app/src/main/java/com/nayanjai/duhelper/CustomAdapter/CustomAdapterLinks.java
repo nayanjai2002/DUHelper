@@ -5,22 +5,22 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.nayanjai.duhelper.FullView;
 import com.nayanjai.duhelper.R;
 
-public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomHolder> {
+public class CustomAdapterLinks extends RecyclerView.Adapter<CustomAdapterLinks.CustomHolder> {
 
     Context context;
     String[] title;
     String[] urlLink;
 
-    public CustomAdapter(Context context, String[] title,String[] urlLink) {
+    public CustomAdapterLinks(Context context, String[] title, String[] urlLink) {
         this.context = context;
         this.title = title;
         this.urlLink = urlLink;
@@ -41,7 +41,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomHold
 
         customHolder.textView.setText(title1);
 
-          customHolder.linearLayout.setOnClickListener ( new View.OnClickListener () {
+          customHolder.cardView.setOnClickListener ( new View.OnClickListener () {
            @Override
             public void onClick(View v) {
 
@@ -62,11 +62,12 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomHold
     static class CustomHolder extends RecyclerView.ViewHolder {
 
         TextView textView;
-        LinearLayout linearLayout;
+
+        CardView cardView;
         public CustomHolder(@NonNull View itemView) {
             super(itemView);
 
-            linearLayout = (LinearLayout) itemView.findViewById(R.id.syl_link_linearlayout);
+            cardView = (CardView) itemView.findViewById(R.id.ug_content_cardview);
             textView = (TextView) itemView.findViewById(R.id.title_links_body);
         }
     }

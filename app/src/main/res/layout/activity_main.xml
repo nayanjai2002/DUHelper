@@ -8,7 +8,7 @@
     android:background="@drawable/gradient_background"
     android:fitsSystemWindows="true"
     tools:context=".MainActivity"
-    tools:openDrawer="start">
+    tools:openDrawer="end">
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"

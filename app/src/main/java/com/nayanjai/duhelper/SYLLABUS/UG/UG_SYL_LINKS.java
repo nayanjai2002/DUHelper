@@ -6,13 +6,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-import com.nayanjai.duhelper.CustomAdapter.CustomAdapter;
+import com.nayanjai.duhelper.CustomAdapter.CustomAdapterLinks;
+import com.nayanjai.duhelper.CustomAdapter.CustomAdapterLinks;
 import com.nayanjai.duhelper.R;
 
-public class UG_Paper_Syl_LINKS_Activity extends AppCompatActivity {
+public class UG_SYL_LINKS extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    CustomAdapter customAdapter;
+    CustomAdapterLinks customAdapterLinks;
 
     String []urls;
     String []titles;
@@ -21,7 +22,7 @@ public class UG_Paper_Syl_LINKS_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ug_paper_syl_links);
+        setContentView(R.layout.activity_ug_syl_links);
 
 
         recyclerView = (RecyclerView) findViewById(R.id.ug_syl_recyclerview);
@@ -55,9 +56,9 @@ public class UG_Paper_Syl_LINKS_Activity extends AppCompatActivity {
 
         };
 
-        customAdapter = new CustomAdapter(this,titles,urls);
+        customAdapterLinks = new CustomAdapterLinks(this,titles,urls);
         recyclerView.setLayoutManager(new LinearLayoutManager(this ));
-        recyclerView.setAdapter(customAdapter);
+        recyclerView.setAdapter(customAdapterLinks);
 
         //..................................HISTORY.................................//
 
