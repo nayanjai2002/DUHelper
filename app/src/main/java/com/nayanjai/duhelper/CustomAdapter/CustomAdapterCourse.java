@@ -19,12 +19,12 @@ public class CustomAdapterCourse extends RecyclerView.Adapter<CustomAdapterCours
 
     Context context;
     String [] coursetitle;
-    String [] courseclass;
 
-    public CustomAdapterCourse(Context context, String[] coursetitle, String[] courseclass) {
+
+    public CustomAdapterCourse(Context context, String[] coursetitle) {
         this.context = context;
         this.coursetitle = coursetitle;
-        this.courseclass = courseclass;
+
     }
 
     @NonNull
@@ -38,7 +38,7 @@ public class CustomAdapterCourse extends RecyclerView.Adapter<CustomAdapterCours
     public void onBindViewHolder(@NonNull CustomHolder customHolder, int position) {
 
         String coursetitle1 = coursetitle[position];
-        String courseclass1 = courseclass[position];
+
 
         customHolder.textView.setText(coursetitle1);
         customHolder.cardView.setOnClickListener ( new View.OnClickListener () {
@@ -47,7 +47,7 @@ public class CustomAdapterCourse extends RecyclerView.Adapter<CustomAdapterCours
 
                 Intent intent =new Intent( context, UG_SYL_LINKS.class );
 
-                intent.putExtra("courseclasses",courseclass1);
+                intent.putExtra("courseclasses",coursetitle1);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity ( intent );
             }
@@ -68,7 +68,7 @@ public class CustomAdapterCourse extends RecyclerView.Adapter<CustomAdapterCours
         public CustomHolder(@NonNull View itemView) {
             super(itemView);
             textView = itemView.findViewById(R.id.ug_syl_course_title);
-            cardView = (CardView) itemView.findViewById(R.id.ug_syl_course_cardview);
+            cardView = itemView.findViewById(R.id.ug_syl_course_cardview);
         }
     }
 }

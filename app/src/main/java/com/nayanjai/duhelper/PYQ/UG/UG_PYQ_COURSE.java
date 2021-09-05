@@ -1,4 +1,4 @@
-package com.nayanjai.duhelper.SYLLABUS.UG;
+package com.nayanjai.duhelper.PYQ.UG;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -9,24 +9,23 @@ import android.os.Bundle;
 import com.nayanjai.duhelper.CustomAdapter.CustomAdapterCourse;
 import com.nayanjai.duhelper.R;
 
-public class UG_SYL_COURSE extends AppCompatActivity {
+public class UG_PYQ_COURSE extends AppCompatActivity {
 
     RecyclerView recyclerView;
     CustomAdapterCourse customAdapterCourse;
-
 
     String []coursetitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ug_syl_course);
+        setContentView(R.layout.activity_ug_pyq_course);
 
         recyclerView = findViewById(R.id.ug_syl_course_recyclerview);
 
 
         coursetitle = new String[] {
-               //Faculty of Social Sciences
+                //Faculty of Social Sciences
                 "HISTORY",
                 "GEOGRAPHY",
                 "ECONOMICS",
@@ -104,4 +103,6 @@ public class UG_SYL_COURSE extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(customAdapterCourse);
     }
+
+
 }

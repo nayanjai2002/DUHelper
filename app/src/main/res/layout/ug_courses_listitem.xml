@@ -19,7 +19,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/ug_syl_course_cardview"
             android:layout_width="320dp"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_margin="10dp"
             android:clickable="true"

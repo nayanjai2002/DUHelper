@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DUHelper.NoActionBar">
         <activity
+            android:name=".PYQ.UG.UG_PYQ_LINKS"
+            android:exported="true" />
+        <activity
+            android:name=".PYQ.UG.UG_PYQ_COURSE"
+            android:exported="true" />
+        <activity
             android:name=".SYLLABUS.UG.UG_SYL_COURSE"
             android:exported="true" />
         <activity
