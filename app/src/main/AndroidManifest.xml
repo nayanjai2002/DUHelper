@@ -19,6 +19,9 @@
             android:name=".PYQ.UG.UG_PYQ_COURSE"
             android:exported="true" />
         <activity
+            android:name=".SYLLABUS.UG.UG_SYL_COURSES"
+            android:exported="true" />
+        <activity
             android:name=".SYLLABUS.UG.UG_SYL_PAPERS"
             android:exported="true" />
         <activity
@@ -45,7 +48,8 @@
         <activity android:name=".MainActivity" />
         <activity
             android:name=".Splashscreen"
-            android:theme="@style/Theme.Design.NoActionBar">
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

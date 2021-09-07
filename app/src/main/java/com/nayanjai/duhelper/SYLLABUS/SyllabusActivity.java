@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import com.nayanjai.duhelper.R;
+import com.nayanjai.duhelper.SYLLABUS.UG.UG_SYL_COURSES;
 import com.nayanjai.duhelper.SYLLABUS.UG.UG_SYL_PAPERS;
 
 import android.content.Intent;
@@ -30,7 +31,7 @@ public class SyllabusActivity extends AppCompatActivity {
         ugCV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), UG_SYL_PAPERS.class);
+                Intent intent = new Intent(getApplicationContext(), UG_SYL_COURSES.class);
                 startActivity(intent);
             }
         });
