@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SYLLABUS.UG.UG_SYL_COURSE"
-    android:background="@drawable/gradient_bg2">
-
+    tools:context=".SYLLABUS.UG.UG_SYL_COURSES">
 
     <LinearLayout
         android:id="@+id/ug_course_linearLayout"
@@ -20,7 +18,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/ug_syl_course_cardview"
+            android:id="@+id/ug_syl_cardview"
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:layout_gravity="center_vertical"
@@ -67,5 +65,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ug_course_linearLayout" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

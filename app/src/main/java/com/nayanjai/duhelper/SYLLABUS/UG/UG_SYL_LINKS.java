@@ -9,8 +9,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.nayanjai.duhelper.CustomAdapter.CustomAdapterLinks;
-import com.nayanjai.duhelper.CustomAdapter.CustomAdapterLinks;
+import com.nayanjai.duhelper.SYLLABUS.CustomAdapter.CustomAdapterLinks;
 import com.nayanjai.duhelper.R;
 
 public class UG_SYL_LINKS extends AppCompatActivity {
@@ -34,7 +33,7 @@ public class UG_SYL_LINKS extends AppCompatActivity {
 
 
         Intent i = getIntent();
-        String subject = i.getStringExtra("courseclasses");
+        String subject = i.getStringExtra("papersclasses");
         Log.d("subject", subject);
 
         //..................................HISTORY.................................//

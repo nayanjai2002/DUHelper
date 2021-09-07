@@ -17,7 +17,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/ug_syl_course_cardview"
+            android:id="@+id/ug_syl_papers_cardview"
             android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -32,7 +32,7 @@
 
 
                 <TextView
-                    android:id="@+id/ug_syl_course_title"
+                    android:id="@+id/ug_syl_papers_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
@@ -40,7 +40,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="30dp"
                     android:gravity="center_horizontal"
-                    android:text="@string/courses_name"
+                    android:text="@string/papers"
                     android:textColor="@color/black"
                     android:textSize="26sp" />
 

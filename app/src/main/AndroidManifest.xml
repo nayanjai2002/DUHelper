@@ -19,7 +19,7 @@
             android:name=".PYQ.UG.UG_PYQ_COURSE"
             android:exported="true" />
         <activity
-            android:name=".SYLLABUS.UG.UG_SYL_COURSE"
+            android:name=".SYLLABUS.UG.UG_SYL_PAPERS"
             android:exported="true" />
         <activity
             android:name=".FullView"

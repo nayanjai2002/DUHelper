@@ -1,4 +1,4 @@
-package com.nayanjai.duhelper.CustomAdapter;
+package com.nayanjai.duhelper.SYLLABUS.CustomAdapter;
 
 import android.content.Context;
 import android.content.Intent;
