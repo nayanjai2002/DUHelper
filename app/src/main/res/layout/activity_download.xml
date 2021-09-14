@@ -7,4 +7,31 @@
     tools:context=".DOWNLOADS.DownloadActivity"
     android:background="@drawable/gradient_bg5">
 
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:src="@drawable/maker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/staysoon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STAY CALM..COMING SOON.."
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.805" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

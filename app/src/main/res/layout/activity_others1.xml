@@ -20,7 +20,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/download_cardview"
+            android:id="@+id/others_cardview"
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:layout_gravity="center_vertical"
@@ -34,7 +34,7 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/downloads_icon"
+                    android:id="@+id/others_icon"
                     android:layout_width="55dp"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -50,7 +50,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="30dp"
-                    android:layout_toRightOf="@id/downloads_icon"
+                    android:layout_toRightOf="@id/others_icon"
                     android:gravity="center_horizontal"
                     android:text="@string/others"
                     android:textColor="@color/black"
@@ -73,7 +73,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/ug_cardview"
+            android:id="@+id/ug_others_cardview"
             android:layout_width="320dp"
             android:layout_height="60dp"
             android:layout_gravity="center_vertical"
@@ -116,7 +116,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/pg_cardview"
+            android:id="@+id/pg_others_cardview"
             android:layout_width="320dp"
             android:layout_height="60dp"
             android:layout_gravity="center_vertical"
@@ -159,7 +159,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/rev_cardview"
+            android:id="@+id/xyz_others_cardview"
             android:layout_width="320dp"
             android:layout_height="60dp"
             android:layout_gravity="center_vertical"
@@ -181,7 +181,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="30dp"
                     android:gravity="center_horizontal"
-                    android:text="@string/revised_cbcs_syllabi"
+                    android:text="XYZ"
                     android:textColor="@color/black"
                     android:textSize="26sp" />
 
@@ -201,7 +201,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/othr_cardview"
+            android:id="@+id/abc_others_cardview"
             android:layout_width="320dp"
             android:layout_height="60dp"
             android:layout_gravity="center_vertical"
@@ -223,7 +223,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="30dp"
                     android:gravity="center_horizontal"
-                    android:text="@string/other_courses"
+                    android:text="ABC"
                     android:textColor="@color/black"
                     android:textSize="26sp" />
 

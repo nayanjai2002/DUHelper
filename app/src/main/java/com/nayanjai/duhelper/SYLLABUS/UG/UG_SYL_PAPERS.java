@@ -9,14 +9,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.nayanjai.duhelper.SYLLABUS.CustomAdapter.CustomAdapterLinks;
-import com.nayanjai.duhelper.SYLLABUS.CustomAdapter.CustomAdapterPapers;
+import com.nayanjai.duhelper.SYLLABUS.CustomAdapter.UG_SYL_PAPER_ADAPTER;
 import com.nayanjai.duhelper.R;
 
 public class UG_SYL_PAPERS extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    CustomAdapterPapers customAdapterPapers;
+    UG_SYL_PAPER_ADAPTER UGSYLPAPERADAPTER;
 
 
     String []FSStitle;
@@ -131,38 +130,38 @@ public class UG_SYL_PAPERS extends AppCompatActivity {
 
         switch (Branch) {
             case "Faculty of Social Sciences":
-                customAdapterPapers = new CustomAdapterPapers(this,FSStitle );
+                UGSYLPAPERADAPTER = new UG_SYL_PAPER_ADAPTER(this,FSStitle );
                 break;
 
             case "Faculty of Science":
-                customAdapterPapers = new CustomAdapterPapers(this,FStitle);
+                UGSYLPAPERADAPTER = new UG_SYL_PAPER_ADAPTER(this,FStitle);
                 break;
 
             case "Faculty of Mathematical Sciences":
-                customAdapterPapers = new CustomAdapterPapers(this,FMStitle);
+                UGSYLPAPERADAPTER = new UG_SYL_PAPER_ADAPTER(this,FMStitle);
                 break;
 
             case "Faculty of Inter-disciplinary & Applied Sciences":
-                customAdapterPapers = new CustomAdapterPapers(this,FIDAStitle);
+                UGSYLPAPERADAPTER = new UG_SYL_PAPER_ADAPTER(this,FIDAStitle);
                 break;
 
             case "Faculty of Commerce & Business Studies":
-                customAdapterPapers = new CustomAdapterPapers(this,FCBStitle);
+                UGSYLPAPERADAPTER = new UG_SYL_PAPER_ADAPTER(this,FCBStitle);
                 break;
 
             case "Faculty of Arts":
-                customAdapterPapers = new CustomAdapterPapers(this,FAtitle);
+                UGSYLPAPERADAPTER = new UG_SYL_PAPER_ADAPTER(this,FAtitle);
                 break;
 
             case "Faculty of Applied Social Sciences & Humanities":
-                customAdapterPapers = new CustomAdapterPapers(this,FASSHtitle);
+                UGSYLPAPERADAPTER = new UG_SYL_PAPER_ADAPTER(this,FASSHtitle);
                 break;
             default:
                 Toast.makeText(getApplicationContext(), "Error Generated", Toast.LENGTH_SHORT).show();
 
         }
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(customAdapterPapers);
+        recyclerView.setAdapter(UGSYLPAPERADAPTER);
 ;
     }
 }

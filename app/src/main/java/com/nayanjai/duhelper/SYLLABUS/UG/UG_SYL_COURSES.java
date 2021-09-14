@@ -7,13 +7,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
 import com.nayanjai.duhelper.R;
-import com.nayanjai.duhelper.SYLLABUS.CustomAdapter.CustomAdapterCourses;
-import com.nayanjai.duhelper.SYLLABUS.CustomAdapter.CustomAdapterPapers;
+import com.nayanjai.duhelper.SYLLABUS.CustomAdapter.UG_SYL_COURSE_ADAPTER;
 
 public class UG_SYL_COURSES extends AppCompatActivity {
 
-    RecyclerView recyclerView;
-    CustomAdapterCourses customAdapterCourses;
+    RecyclerView recyclerViewcourse;
+    UG_SYL_COURSE_ADAPTER UGSYLCOURSEADAPTER;
 
     String []coursestitle;
 
@@ -21,6 +20,8 @@ public class UG_SYL_COURSES extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ug_syl_courses);
+
+        recyclerViewcourse = findViewById(R.id.ug_syl_course_recyclerview);
 
         coursestitle = new String[] {
 
@@ -34,9 +35,9 @@ public class UG_SYL_COURSES extends AppCompatActivity {
 
         };
 
-        customAdapterCourses = new CustomAdapterCourses(this,coursestitle);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(customAdapterCourses);
+        UGSYLCOURSEADAPTER = new UG_SYL_COURSE_ADAPTER(this,coursestitle);
+        recyclerViewcourse.setLayoutManager(new LinearLayoutManager(this));
+        recyclerViewcourse.setAdapter(UGSYLCOURSEADAPTER);
 
 
     }

@@ -9,13 +9,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.nayanjai.duhelper.SYLLABUS.CustomAdapter.CustomAdapterLinks;
+import com.nayanjai.duhelper.SYLLABUS.CustomAdapter.UG_SYL_LINKS_ADAPTER;
 import com.nayanjai.duhelper.R;
 
 public class UG_SYL_LINKS extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    CustomAdapterLinks customAdapterLinks;
+    UG_SYL_LINKS_ADAPTER UGSYLLINKSADAPTER;
 
     String[] hisurls;
     String[] histitles;
@@ -39,8 +39,8 @@ public class UG_SYL_LINKS extends AppCompatActivity {
         //..................................HISTORY.................................//
         hisurls = new String[]{
 
-                "https://drive.google.com/file/d/12XcoKJcaGGeH7xsmgxZqSYnkjKd2rVJi/view?usp=sharing",
-                "https://drive.google.com/file/d/12XcoKJcaGGeH7xsmgxZqSYnkjKd2rVJi/view?usp=sharing",
+                "https://www.youtube.com/",
+                "https://www.google.com/",
                 "https://drive.google.com/file/d/12XcoKJcaGGeH7xsmgxZqSYnkjKd2rVJi/view?usp=sharing",
                 "https://drive.google.com/file/d/12XcoKJcaGGeH7xsmgxZqSYnkjKd2rVJi/view?usp=sharing",
                 "https://drive.google.com/file/d/12XcoKJcaGGeH7xsmgxZqSYnkjKd2rVJi/view?usp=sharing",
@@ -63,9 +63,9 @@ public class UG_SYL_LINKS extends AppCompatActivity {
         // Geography
         geourls = new String[]{
 
-                "https://drive.google.com/file/d/12XcoKJcaGGeH7xsmgxZqSYnkjKd2rVJi/view?usp=sharing",
-                "https://drive.google.com/file/d/12XcoKJcaGGeH7xsmgxZqSYnkjKd2rVJi/view?usp=sharing",
-                "https://drive.google.com/file/d/12XcoKJcaGGeH7xsmgxZqSYnkjKd2rVJi/view?usp=sharing",
+                "https://drive.google.com/file/d/1M6Oxs-YSgF0wDvzbRCxkq-DYHySaGy_s/view?usp=sharing",
+                "https://docs.google.com/document/d/1M8SkCzglEBqltSFnqJkz-CieseQvIRtj/edit?usp=sharing&ouid=107269267354067321572&rtpof=true&sd=true",
+                "https://drive.google.com/file/d/1M6Oxs-YSgF0wDvzbRCxkq-DYHySaGy_s/view?usp=sharing",
                 "https://drive.google.com/file/d/12XcoKJcaGGeH7xsmgxZqSYnkjKd2rVJi/view?usp=sharing",
                 "https://drive.google.com/file/d/12XcoKJcaGGeH7xsmgxZqSYnkjKd2rVJi/view?usp=sharing",
 
@@ -84,11 +84,11 @@ public class UG_SYL_LINKS extends AppCompatActivity {
 
         switch (subject) {
             case "HISTORY":
-                customAdapterLinks = new CustomAdapterLinks(this, histitles, hisurls);
+                UGSYLLINKSADAPTER = new UG_SYL_LINKS_ADAPTER(this, histitles, hisurls);
                 break;
 
             case "GEOGRAPHY":
-                customAdapterLinks = new CustomAdapterLinks(this, geoTitle, geourls);
+                UGSYLLINKSADAPTER = new UG_SYL_LINKS_ADAPTER(this, geoTitle, geourls);
                 break;
             default:
                 Toast.makeText(getApplicationContext(), "Error Generated", Toast.LENGTH_SHORT).show();
@@ -97,7 +97,7 @@ public class UG_SYL_LINKS extends AppCompatActivity {
 
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(customAdapterLinks);
+        recyclerView.setAdapter(UGSYLLINKSADAPTER);
 
 
     }

@@ -13,6 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DUHelper.NoActionBar">
         <activity
+            android:name=".EBOOKS.UG.UG_EBK_COURSE"
+            android:exported="true" />
+        <activity
+            android:name=".EBOOKS.UG.UG_EBK_PAPERS"
+            android:exported="true" />
+        <activity
+            android:name=".EBOOKS.UG.UG_EBK_LINKS"
+            android:exported="true" />
+        <activity
+            android:name=".PYQ.UG.UG_PYQ_PAPERS"
+            android:exported="true" />
+        <activity
             android:name=".PYQ.UG.UG_PYQ_LINKS"
             android:exported="true" />
         <activity
@@ -23,9 +35,6 @@
             android:exported="true" />
         <activity
             android:name=".SYLLABUS.UG.UG_SYL_PAPERS"
-            android:exported="true" />
-        <activity
-            android:name=".FullView"
             android:exported="true" />
         <activity
             android:name=".SYLLABUS.UG.UG_SYL_LINKS"
@@ -45,11 +54,14 @@
         <activity
             android:name=".SYLLABUS.SyllabusActivity"
             android:exported="true" />
+        <activity
+            android:name=".FullView"
+            android:exported="true" />
         <activity android:name=".MainActivity" />
         <activity
             android:name=".Splashscreen"
-            android:theme="@style/Theme.Design.NoActionBar"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.Design.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
