@@ -3,7 +3,7 @@
     <style name="Theme.DUHelper.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#D851E7</item>
-        <item name="colorPrimaryVariant">#00D851E7</item>
+        <item name="colorPrimaryVariant">#D851E7</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>

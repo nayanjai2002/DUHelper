@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
@@ -27,6 +28,7 @@ public class UG_PYQ_LINKS extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ug_pyq_links);
+        getWindow().setStatusBarColor(Color.parseColor("#3D6DEA"));
 
         recyclerView = (RecyclerView) findViewById(R.id.ug_pyq_link_recyclerview);
 

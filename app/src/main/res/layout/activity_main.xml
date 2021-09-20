@@ -39,6 +39,7 @@
                 android:minHeight="?attr/actionBarSize"
                 android:theme="?attr/actionBarTheme"
                 app:navigationIcon="@drawable/menu"
+                app:contentInsetStart="0dp"
                 app:title="DU Helper"
                 app:titleTextColor="#ffff" />
 

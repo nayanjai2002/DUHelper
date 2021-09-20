@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 
@@ -19,6 +20,7 @@ public class eBooksActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ebooks1);
+        getWindow().setStatusBarColor(Color.parseColor("#FCD968"));
 
         ugCV = findViewById(R.id.ug_ebk_cardview);
         pgCV = findViewById(R.id.pg_ebk_cardview);

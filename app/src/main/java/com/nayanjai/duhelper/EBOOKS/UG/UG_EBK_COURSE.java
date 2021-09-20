@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import com.nayanjai.duhelper.EBOOKS.UG.ADAPTERS.UG_EBK_COURSE_ADAPTER;
@@ -21,6 +22,7 @@ public class UG_EBK_COURSE extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ug_ebk_course);
+        getWindow().setStatusBarColor(Color.parseColor("#00FCD968"));
         recyclerViewcourse = findViewById(R.id.ug_ebk_course_recyclerview);
 
         ebkcoursestitle = new String[] {

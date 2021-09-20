@@ -8,6 +8,7 @@ import com.nayanjai.duhelper.SYLLABUS.UG.UG_SYL_COURSES;
 import com.nayanjai.duhelper.SYLLABUS.UG.UG_SYL_PAPERS;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 
@@ -19,6 +20,7 @@ public class SyllabusActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_syllabus1);
+        getWindow().setStatusBarColor(Color.parseColor("#63C6AA"));
 
         ////Hooks
         ugCV = (CardView)findViewById(R.id.ug_cardview);

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import com.nayanjai.duhelper.PYQ.UG.ADAPTERS.UG_PYQ_COURSE_ADAPTER;
@@ -20,6 +21,7 @@ public class UG_PYQ_COURSE extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ug_pyq_course);
+        getWindow().setStatusBarColor(Color.parseColor("#003D6DEA"));
         recyclerViewcourse = findViewById(R.id.ug_pyq_course_recyclerview);
 
         pyqcoursestitle = new String[] {

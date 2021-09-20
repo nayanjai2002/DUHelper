@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 
@@ -17,6 +18,7 @@ public class PYQActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pyq1);
+        getWindow().setStatusBarColor(Color.parseColor("#3D6DEA"));
 
         ugCV = findViewById(R.id.ug_pyq_cardview);
         pgCV = findViewById(R.id.pg_pyq_cardview);

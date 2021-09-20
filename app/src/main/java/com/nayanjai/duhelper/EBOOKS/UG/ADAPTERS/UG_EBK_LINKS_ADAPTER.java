@@ -12,6 +12,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.nayanjai.duhelper.FullView;
+import com.nayanjai.duhelper.PDFVIEWER.PDFViewPager;
 import com.nayanjai.duhelper.R;
 
 public class UG_EBK_LINKS_ADAPTER extends RecyclerView.Adapter<UG_EBK_LINKS_ADAPTER.CustomHolder> {
@@ -48,7 +49,7 @@ public class UG_EBK_LINKS_ADAPTER extends RecyclerView.Adapter<UG_EBK_LINKS_ADAP
             @Override
             public void onClick(View v) {
 
-                Intent intent =new Intent( context, FullView.class );
+                Intent intent =new Intent( context, PDFViewPager.class );
 
                 intent.putExtra("url",urls);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

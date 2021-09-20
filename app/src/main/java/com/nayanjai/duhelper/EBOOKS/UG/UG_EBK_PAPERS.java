@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
@@ -31,6 +32,7 @@ public class UG_EBK_PAPERS extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ug_ebk_papers);
+        getWindow().setStatusBarColor(Color.parseColor("#FCD968"));
 
         recyclerView = findViewById(R.id.ug_ebk_papers_recyclerview);
 

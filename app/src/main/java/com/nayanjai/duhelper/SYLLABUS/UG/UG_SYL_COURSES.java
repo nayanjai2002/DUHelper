@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import com.nayanjai.duhelper.R;
@@ -20,6 +21,7 @@ public class UG_SYL_COURSES extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ug_syl_courses);
+        getWindow().setStatusBarColor(Color.parseColor("#0063C6AA"));
 
         recyclerViewcourse = findViewById(R.id.ug_syl_course_recyclerview);
 
