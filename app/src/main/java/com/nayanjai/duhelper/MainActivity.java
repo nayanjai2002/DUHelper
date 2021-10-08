@@ -3,6 +3,8 @@ package com.nayanjai.duhelper;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.appcompat.widget.SwitchCompat;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
@@ -14,6 +16,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Switch;
 
 import com.google.android.material.navigation.NavigationView;
 import com.nayanjai.duhelper.DOWNLOADS.DownloadActivity;
@@ -29,6 +32,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     NavigationView navigationView;
     Toolbar toolbar;
     CardView cardView_syllabus,cardView_ebooks,cardView_pyq,cardView_others,cardView_download;
+    SwitchCompat daynight_switch;
+
+
      
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,9 +55,30 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         cardView_pyq = findViewById(R.id.pyq_cardview);
         cardView_others = findViewById(R.id.others_cardview);
         cardView_download = findViewById(R.id.download_cardview);
+        daynight_switch = findViewById(R.id.daynight_btn);
 
         /*-------------------------------------Tool bar--------------------------------------*/
         setSupportActionBar(toolbar);
+
+        /*-------------------------------------SharedPreference--------------------------------------*/
+
+
+
+        /*-------------------------------------Switch--------------------------------------*/
+
+        daynight_switch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (daynight_switch.isChecked()) {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                    setTheme(R.style.Theme_DUHelper_Dark);
+                } else {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                    setTheme(R.style.Theme_DUHelper_NoActionBar);
+                }
+            }
+        });
+
 
         /*-------------------------------------Navigation Drawer Menu--------------------------------------*/
         navigationView.bringToFront();

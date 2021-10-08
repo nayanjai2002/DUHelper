@@ -53,7 +53,6 @@
                     android:layout_toRightOf="@id/others_icon"
                     android:gravity="center_horizontal"
                     android:text="@string/others"
-                    android:textColor="@color/black"
                     android:textSize="22sp" />
 
             </RelativeLayout>
@@ -96,7 +95,6 @@
                     android:layout_marginEnd="30dp"
                     android:gravity="center_horizontal"
                     android:text="@string/under_graduate"
-                    android:textColor="@color/black"
                     android:textSize="26sp" />
 
             </RelativeLayout>
@@ -139,7 +137,6 @@
                     android:layout_marginEnd="30dp"
                     android:gravity="center_horizontal"
                     android:text="@string/post_graduate"
-                    android:textColor="@color/black"
                     android:textSize="26sp" />
 
             </RelativeLayout>
@@ -182,7 +179,6 @@
                     android:layout_marginEnd="30dp"
                     android:gravity="center_horizontal"
                     android:text="XYZ"
-                    android:textColor="@color/black"
                     android:textSize="26sp" />
 
             </RelativeLayout>
@@ -224,7 +220,6 @@
                     android:layout_marginEnd="30dp"
                     android:gravity="center_horizontal"
                     android:text="ABC"
-                    android:textColor="@color/black"
                     android:textSize="26sp" />
 
             </RelativeLayout>

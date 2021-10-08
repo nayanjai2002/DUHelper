@@ -10,6 +10,9 @@
     tools:context=".MainActivity"
     tools:openDrawer="end">
 
+
+
+
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="280dp"
@@ -41,7 +44,16 @@
                 app:navigationIcon="@drawable/menu"
                 app:contentInsetStart="0dp"
                 app:title="DU Helper"
-                app:titleTextColor="#ffff" />
+                app:titleTextColor="#ffff" >
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/daynight_btn"
+                    android:thumb="@drawable/thumb"
+                    android:track="@drawable/track"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="145dp"
+                    />
+            </androidx.appcompat.widget.Toolbar>
 
 
         </com.google.android.material.appbar.AppBarLayout>
@@ -127,7 +139,6 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
                         android:text="SYLLABUS"
-                        android:textColor="@color/black"
                         android:textSize="22sp" />
 
                 </RelativeLayout>
@@ -164,7 +175,6 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
                         android:text="E-BOOKS"
-                        android:textColor="@color/black"
                         android:textSize="22sp" />
 
                 </RelativeLayout>
@@ -210,11 +220,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/pyq_icon"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="8dp"
-                        android:text="PREVIOUS YEAR QUESTIONS"
-                        android:textColor="@color/black"
-                        android:textSize="12sp" />
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="6dp"
+                        android:text="PREVIOUS YEAR \n QUESTIONS"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -250,7 +260,6 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
                         android:text="OTHERS"
-                        android:textColor="@color/black"
                         android:textSize="22sp" />
 
                 </RelativeLayout>
@@ -301,12 +310,13 @@
                         android:layout_toRightOf="@id/downloads_icon"
                         android:gravity="center_horizontal"
                         android:text="DOWNLOADS"
-                        android:textColor="@color/black"
                         android:textSize="22sp" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.drawerlayout.widget.DrawerLayout>

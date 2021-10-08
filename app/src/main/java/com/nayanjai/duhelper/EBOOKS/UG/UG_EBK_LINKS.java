@@ -41,7 +41,7 @@ public class UG_EBK_LINKS extends AppCompatActivity {
         //..................................HISTORY.................................//
         hisurls = new String[]{
 
-                "https://firebasestorage.googleapis.com/v0/b/duhelper-87f37.appspot.com/o/admit%20card%204th%20sem.pdf?alt=media&token=afa01c72-280e-4986-bdf1-201ebe9988fe",
+                "",
                 "https://www.google.com/",
                 "https://1drv.ms/b/s!AtztU4uHf_vgigXwRmf9hq_SR8DE?e=zeSr5Z",
                 "https://1drv.ms/b/s!AtztU4uHf_vgigSZMPw9-rfxZ1LR?e=ROv0Wq",

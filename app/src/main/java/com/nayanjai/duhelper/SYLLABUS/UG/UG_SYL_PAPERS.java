@@ -26,6 +26,13 @@ public class UG_SYL_PAPERS extends AppCompatActivity {
     String []FCBStitle;
     String []FAtitle;
     String []FASSHtitle;
+    String social = "social";
+    String science = "science";
+    String maths = "maths";
+    String interdis = "interdis";
+    String commerce = "commerce";
+    String arts = "arts";
+    String humanities = "humanities";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,7 +111,7 @@ public class UG_SYL_PAPERS extends AppCompatActivity {
                        "ENGLISH",
                        "GERMANIC & ROMANCE STUDIES :(FRENCH, GERMAN, ITALIAN AND SPANISH)",
                        "HINDI",
-                       "MODERN INDIAN LANGUAGES & LITERARY STUDIES (I) ASSAMESE, " +
+                       "MODERN INDIAN LANGUAGES & LITERARY STUDIES (I) ASSAMESE," +
                                "(II) BENGALI," +
                                "(III) GUJARATI," +
                                "(IV) MANIPURI," +
@@ -130,38 +137,40 @@ public class UG_SYL_PAPERS extends AppCompatActivity {
                 //Faculty of Applied Social Sciences & Humanities
         };
 
-        switch (Branch) {
-            case "Faculty of Social Sciences":
-                UGSYLPAPERADAPTER = new UG_SYL_PAPER_ADAPTER(this,FSStitle );
-                break;
 
-            case "Faculty of Science":
-                UGSYLPAPERADAPTER = new UG_SYL_PAPER_ADAPTER(this,FStitle);
-                break;
+                   switch (Branch) {
+                       case "Faculty of Social Sciences":
+                           UGSYLPAPERADAPTER = new UG_SYL_PAPER_ADAPTER(this, FSStitle,social);
+                           break;
 
-            case "Faculty of Mathematical Sciences":
-                UGSYLPAPERADAPTER = new UG_SYL_PAPER_ADAPTER(this,FMStitle);
-                break;
+                       case "Faculty of Science":
+                           UGSYLPAPERADAPTER = new UG_SYL_PAPER_ADAPTER(this, FStitle,science);
+                           break;
 
-            case "Faculty of Inter-disciplinary & Applied Sciences":
-                UGSYLPAPERADAPTER = new UG_SYL_PAPER_ADAPTER(this,FIDAStitle);
-                break;
+                       case "Faculty of Mathematical Sciences":
+                           UGSYLPAPERADAPTER = new UG_SYL_PAPER_ADAPTER(this, FMStitle,maths);
+                           break;
 
-            case "Faculty of Commerce & Business Studies":
-                UGSYLPAPERADAPTER = new UG_SYL_PAPER_ADAPTER(this,FCBStitle);
-                break;
+                       case "Faculty of Inter-disciplinary & Applied Sciences":
+                           UGSYLPAPERADAPTER = new UG_SYL_PAPER_ADAPTER(this, FIDAStitle,interdis);
+                           break;
 
-            case "Faculty of Arts":
-                UGSYLPAPERADAPTER = new UG_SYL_PAPER_ADAPTER(this,FAtitle);
-                break;
+                       case "Faculty of Commerce & Business Studies":
+                           UGSYLPAPERADAPTER = new UG_SYL_PAPER_ADAPTER(this, FCBStitle,commerce);
+                           break;
 
-            case "Faculty of Applied Social Sciences & Humanities":
-                UGSYLPAPERADAPTER = new UG_SYL_PAPER_ADAPTER(this,FASSHtitle);
-                break;
-            default:
-                Toast.makeText(getApplicationContext(), "Error Generated", Toast.LENGTH_SHORT).show();
+                       case "Faculty of Arts":
+                           UGSYLPAPERADAPTER = new UG_SYL_PAPER_ADAPTER(this, FAtitle,arts);
+                           break;
 
-        }
+                       case "Faculty of Applied Social Sciences & Humanities":
+                           UGSYLPAPERADAPTER = new UG_SYL_PAPER_ADAPTER(this, FASSHtitle,humanities);
+                           break;
+                       default:
+                           Toast.makeText(getApplicationContext(), "Error Generated", Toast.LENGTH_SHORT).show();
+
+                   }
+
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(UGSYLPAPERADAPTER);
 ;

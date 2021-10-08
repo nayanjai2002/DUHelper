@@ -7,6 +7,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.app.Dialog;
 import android.app.DownloadManager;
 import android.app.ProgressDialog;
 import android.content.BroadcastReceiver;
@@ -16,12 +17,16 @@ import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.webkit.CookieManager;
 import android.webkit.DownloadListener;
 import android.webkit.URLUtil;
@@ -30,6 +35,7 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -43,6 +49,7 @@ public class FullView extends AppCompatActivity {
     WebView webView;
     ProgressBar progressBar;
     ImageView imageView;
+
 
 
     @Override
@@ -77,30 +84,70 @@ public class FullView extends AppCompatActivity {
         webView.getSettings().setRenderPriority(WebSettings.RenderPriority.HIGH);
         webView.clearCache(true);
 
+        //Connectivity Manager
 
-        webView.setWebViewClient(new WebViewClient() {
-            //  @Override
-            // public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
-            //     view.loadUrl(url);
-            //     return true;
-            // }
+        ConnectivityManager connectivityManager = (ConnectivityManager)
+                getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        //Get Active network info
+        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+        //Check network status
 
-            @Override
-            public void onPageStarted(WebView view, String url, Bitmap favicon) {
-                super.onPageStarted(view, url, favicon);
-                progressBar.setVisibility(View.VISIBLE);
-                setTitle("loading...");
-            }
+        if (networkInfo == null || !networkInfo.isConnected() || !networkInfo.isAvailable()) {
+            //When internet is inactive
+            Dialog dialog = new Dialog(this);
+            //set content view
+            dialog.setContentView(R.layout.alert_dailog);
+            //Set outside touch
+            dialog.setCanceledOnTouchOutside(false);
+            //Set dialog width and height
+            dialog.getWindow().setLayout(WindowManager.LayoutParams.WRAP_CONTENT, WindowManager.LayoutParams.MATCH_PARENT);
+            //Set transparent background
+           // dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            //Set animation
+            dialog.getWindow().getAttributes().windowAnimations = android.R.style.Animation_Dialog;
+            //Initialize dialog variable
+            Button BtnTry = dialog.findViewById(R.id.tryagain_btn);
+            //Perform Onclick
+            BtnTry.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //call recreate method
+                    recreate();
+                }
+            });
+            //Show dialog
+            dialog.show();
+        } else {
+            //When internet is active
 
-            @Override
-            public void onPageFinished(WebView view, String url) {
-                super.onPageFinished(view, url);
-                progressBar.setVisibility(View.GONE);
-                setTitle(view.getTitle());
-            }
-        });
+            //Load url in webview
 
-        webView.loadUrl(url);
+
+            webView.setWebViewClient(new WebViewClient() {
+                @Override
+                public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+                    view.loadUrl(url);
+                    return true;
+                }
+
+                @Override
+                public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                    super.onPageStarted(view, url, favicon);
+                    progressBar.setVisibility(View.VISIBLE);
+                    setTitle("loading...");
+                }
+
+                @Override
+                public void onPageFinished(WebView view, String url) {
+                    super.onPageFinished(view, url);
+                    progressBar.setVisibility(View.GONE);
+                    setTitle(view.getTitle());
+                }
+            });
+
+            webView.loadUrl(url);
+
+        }
 
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -115,7 +162,6 @@ public class FullView extends AppCompatActivity {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
 
 
                 webView.setDownloadListener(new DownloadListener() {

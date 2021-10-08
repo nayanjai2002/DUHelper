@@ -54,7 +54,6 @@
                     android:layout_toEndOf="@id/downloads_icon"
                     android:gravity="center_horizontal"
                     android:text="@string/syllabus"
-                    android:textColor="@color/black"
                     android:textSize="22sp" />
 
             </RelativeLayout>
@@ -97,7 +96,6 @@
                     android:layout_marginEnd="30dp"
                     android:gravity="center_horizontal"
                     android:text="@string/under_graduate"
-                    android:textColor="@color/black"
                     android:textSize="26sp" />
 
             </RelativeLayout>
@@ -140,7 +138,6 @@
                     android:layout_marginEnd="30dp"
                     android:gravity="center_horizontal"
                     android:text="@string/post_graduate"
-                    android:textColor="@color/black"
                     android:textSize="26sp" />
 
             </RelativeLayout>
@@ -183,7 +180,6 @@
                     android:layout_marginEnd="30dp"
                     android:gravity="center_horizontal"
                     android:text="@string/revised_cbcs_syllabi"
-                    android:textColor="@color/black"
                     android:textSize="26sp" />
 
             </RelativeLayout>
@@ -225,7 +221,6 @@
                     android:layout_marginEnd="30dp"
                     android:gravity="center_horizontal"
                     android:text="@string/other_courses"
-                    android:textColor="@color/black"
                     android:textSize="26sp" />
 
             </RelativeLayout>

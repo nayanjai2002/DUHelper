@@ -46,7 +46,6 @@
                 android:layout_marginBottom="10dp"
                 android:text="SYLLABUS"
                 android:singleLine="false"
-                android:textColor="@color/black"
                 android:textSize="20sp" />
 
         </RelativeLayout>

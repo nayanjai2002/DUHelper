@@ -18,11 +18,13 @@ public class UG_SYL_PAPER_ADAPTER extends RecyclerView.Adapter<UG_SYL_PAPER_ADAP
 
     Context context;
     String [] paperstitle;
+    String  type;
 
 
-    public UG_SYL_PAPER_ADAPTER(Context context, String[] paperstitle) {
+    public UG_SYL_PAPER_ADAPTER(Context context, String[] paperstitle, String type) {
         this.context = context;
         this.paperstitle = paperstitle;
+        this.type = type;
 
     }
 
@@ -47,6 +49,7 @@ public class UG_SYL_PAPER_ADAPTER extends RecyclerView.Adapter<UG_SYL_PAPER_ADAP
                 Intent intent =new Intent( context, UG_SYL_LINKS.class );
 
                 intent.putExtra("papersclasses",paperstitle1);
+                intent.putExtra("type",type);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity ( intent );
             }

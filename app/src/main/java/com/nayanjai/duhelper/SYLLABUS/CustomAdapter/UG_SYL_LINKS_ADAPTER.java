@@ -13,17 +13,22 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.nayanjai.duhelper.FullView;
 import com.nayanjai.duhelper.R;
+import com.nayanjai.duhelper.SYLLABUS.Link;
+
+import java.util.ArrayList;
 
 public class UG_SYL_LINKS_ADAPTER extends RecyclerView.Adapter<UG_SYL_LINKS_ADAPTER.CustomHolder> {
 
     Context context;
     String[] title;
-    String[] urlLink;
+  /*  String[] urlLink;*/
+    ArrayList<Link> list;
 
-    public UG_SYL_LINKS_ADAPTER(Context context, String[] title, String[] urlLink) {
+    public UG_SYL_LINKS_ADAPTER(Context context, String[] title, /*String[] urlLink,*/ ArrayList<Link> list) {
         this.context = context;
         this.title = title;
-        this.urlLink = urlLink;
+      //  this.urlLink = urlLink;
+        this.list = list;
     }
 
     @NonNull
@@ -37,7 +42,9 @@ public class UG_SYL_LINKS_ADAPTER extends RecyclerView.Adapter<UG_SYL_LINKS_ADAP
     @Override
     public void onBindViewHolder(@NonNull CustomHolder customHolder, int i) {
         String title1= title[i];
-        String urls = urlLink[i];
+       /* String urls = urlLink[i]; */
+        Link link = list.get(i);
+
 
         customHolder.textView.setText(title1);
 
@@ -47,9 +54,9 @@ public class UG_SYL_LINKS_ADAPTER extends RecyclerView.Adapter<UG_SYL_LINKS_ADAP
 
                Intent intent =new Intent( context, FullView.class );
 
-                intent.putExtra("url",urls);
+            /*    intent.putExtra("url",urls);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                context.startActivity ( intent );
+                context.startActivity ( intent ); */
            }
         } );
     }

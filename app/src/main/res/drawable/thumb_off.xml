@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#00ff" />
+            <size
+                android:width="8dp"
+                android:height="8dp" />
+
+        </shape>
+    </item>
+
+    <item
+        android:width="32dp"
+        android:height="32dp"
+        android:bottom="8dp"
+        android:drawable="@drawable/day"
+        android:left="1dp"
+        android:right="8dp"
+        android:top="8dp" />
+
+</layer-list>

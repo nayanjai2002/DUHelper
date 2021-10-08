@@ -51,7 +51,6 @@
                     android:layout_toEndOf="@id/ug_pyq_papers_icon"
                     android:gravity="center_horizontal"
                     android:text="@string/previous_year_question"
-                    android:textColor="@color/black"
                     android:textSize="22sp" />
 
             </RelativeLayout>

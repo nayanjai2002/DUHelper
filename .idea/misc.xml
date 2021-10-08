@@ -35,10 +35,16 @@
         <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/drawable/gradient_bg3.xml" value="0.20726495726495728" />
         <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/drawable/gradient_bg4.xml" value="0.20726495726495728" />
         <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/drawable/gradient_bg5.xml" value="0.20726495726495728" />
+        <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/drawable/thumb.xml" value="0.1" />
+        <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/drawable/thumb_off.xml" value="0.1" />
+        <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/drawable/thumb_on.xml" value="0.1" />
+        <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/drawable/track.xml" value="0.19240506329113924" />
+        <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/drawable/track_off.xml" value="0.11481481481481481" />
+        <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/drawable/track_on.xml" value="0.11481481481481481" />
         <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/layout/activity_download.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/layout/activity_ebooks1.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/layout/activity_ebooks1.xml" value="0.176" />
         <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/layout/activity_full_view.xml" value="0.4" />
-        <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/layout/activity_main.xml" value="0.19401709401709402" />
+        <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/layout/activity_others1.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/layout/activity_pdfview_pager.xml" value="0.19401709401709402" />
         <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/layout/activity_pyq1.xml" value="0.23645833333333333" />
@@ -54,6 +60,7 @@
         <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/layout/activity_ug_syl_courses.xml" value="0.1" />
         <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/layout/activity_ug_syl_links.xml" value="0.1" />
         <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/layout/activity_ug_syl_papers.xml" value="0.1" />
+        <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/layout/alert_dailog.xml" value="0.2" />
         <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/layout/nav_bar.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/layout/ug_courses_listitem.xml" value="0.1" />
         <entry key="..\:/Users/Nayan/DUHelper/app/src/main/res/layout/ug_ebk_courses_listitem.xml" value="0.23645833333333333" />

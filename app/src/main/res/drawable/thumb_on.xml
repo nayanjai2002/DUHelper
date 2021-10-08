@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#00ff" />
+            <size
+                android:width="8dp"
+                android:height="8dp" />
+
+        </shape>
+    </item>
+
+    <item
+        android:width="28dp"
+        android:height="28dp"
+        android:bottom="8dp"
+        android:drawable="@drawable/moon"
+        android:left="8dp"
+        android:right="2dp"
+        android:top="8dp" />
+
+
+</layer-list>

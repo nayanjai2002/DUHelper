@@ -24,7 +24,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="STAY CALM..COMING SOON.."
-        android:textColor="@color/white"
         android:fontFamily="sans-serif-medium"
         android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="parent"

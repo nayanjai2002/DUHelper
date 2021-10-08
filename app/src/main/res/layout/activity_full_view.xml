@@ -54,7 +54,7 @@
                     android:layout_toEndOf="@id/ug_syl_link_icon"
                     android:gravity="center_horizontal"
                     android:text="@string/syllabus"
-                    android:textColor="@color/black"
+
                     android:textSize="22sp" />
 
             </RelativeLayout>

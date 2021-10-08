@@ -53,7 +53,6 @@
                     android:layout_toEndOf="@id/ug_ebk_link_icon"
                     android:gravity="center_horizontal"
                     android:text="@string/e_books"
-                    android:textColor="@color/black"
                     android:textSize="22sp" />
 
             </RelativeLayout>
